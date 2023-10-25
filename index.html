@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Movie Parallax</title>
+</head>
+<body>
+    <main class="main">
+        <section class="video-bg">
+            <div class="video-holder">
+                <video id="vid" src="./images/trailer.mp4" controls muted></video>
+            </div>
+            <div class="overlay">
+                <div class="details">
+                    <img src="./images/Avengers_endgame_logo.png" alt="logo">
+                    <h1>End of Infinity Saga</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est fuga tempora adipisci ipsam, nobis nam culpa suscipit dolorum officiis soluta vitae quisquam unde quibusdam molestiae impedit, nihil excepturi! Eum, quod!</p>
+                </div>
+            </div>
+        </section>
+        <!-- Ironman -->
+        <section class="section">
+            <div class="img-bg">
+                <img class="section-img" src="./images/ironman.jpg" alt="image">
+            </div>
+            <div class="section-overlay">
+                <div class="section-details rellax" data-aos="fade-left" data-rellax-speed="0.5">
+                    <!-- <img  src="./images/ironmanlogo.png" alt="ironman-logo"> -->
+                    <h1>Ironman</h1>
+                    <h2>Earth Best Defender</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic omnis aliquam cumque minima repudiandae,Neque tempora.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Thor -->
+        <section class="section">
+            <div class="img-bg">
+                <img class="section-img" src="./images/thor.jpg" alt="image">
+            </div>
+            <div class="section-overlay">
+                <div class="section-details rellax" data-aos="fade-left" data-rellax-speed="0.5">
+                 
+                    <h1>Thor</h1>
+                    <h2>The Strongest Avenger</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic omnis aliquam cumque minima repudiandae,Neque tempora.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Captain america -->
+        <section class="section">
+            <div class="img-bg">
+                <img class="section-img" src="./images/captain.jpg" alt="image">
+            </div>
+            <div class="section-overlay">
+                <div class="section-details rellax" data-aos="fade-left" data-rellax-speed="0.5">
+                    <h1>Captain America</h1>
+                    <h2>The First Avenger</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic omnis aliquam cumque minima repudiandae,Neque tempora.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Thanos -->
+        <section class="section">
+            <div class="img-bg">
+                <img class="section-img" src="./images/thanos.jpg" alt="image">
+            </div>
+            <div class="section-overlay thanos-overlay">
+                <div class="section-details rellax" data-aos="fade-left" data-rellax-speed="0.5">
+                    <h1>Thanos</h1>
+                    <h2>The Mad Titan</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic omnis aliquam cumque minima repudiandae,Neque tempora.</p>
+                </div>
+            </div>
+        </section>
+        <!-- The girl power -->
+        <section class="section">
+            <div class="img-bg">
+                <img class="section-img" src="./images/girl-power.jpg" alt="image">
+            </div>
+            <div class="section-overlay">
+                <div class="section-details rellax" data-aos="fade-left" data-rellax-speed="0.5">
+                  
+                    <h1>The Girl Power</h1>
+                    <h2>Lady Avengers</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic omnis aliquam cumque minima repudiandae,Neque tempora.</p>
+                </div>
+            </div>
+        </section>
+        <!-- banner 1 -->
+        <section class="section">
+            <div class="img-bg">
+                <img class="section-img" src="./images/banner1.jpg" alt="image">
+            </div>
+            <div class="section-overlay">
+                <div class="section-details rellax" data-aos="fade-left" data-rellax-speed="0.5">
+                   
+                    <h1>The Epic Battle</h1>
+                    <h2>The Big Three</h2>
+                </div>
+            </div>
+        </section>
+        <!-- Assemble -->
+        <section class="section">
+            <div class="img-bg">
+                <img class="section-img" src="./images/ultimate-fight.jpg" alt="image">
+            </div>
+            <div class="section-overlay">
+                <div class="section-details rellax" data-aos="fade-left" data-rellax-speed="0.5">
+                  
+                    <h1>Avengers Assemble</h1>
+                    <h2>Lets finish him properly this time.</h2>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+<script>
+
+    AOS.init();
+  // Accepts any class name
+  var rellax = new Rellax('.rellax');
+</script>
+    <script>
+        window.addEventListener("load", function(){
+            document.getElementById("vid").play()
+        })
+    </script>
+</body>
+</html>
